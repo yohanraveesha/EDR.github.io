@@ -1,0 +1,6 @@
+Connection URI for EDRR System Database:
+
+mongodb://localhost:27017/edrr_db
+
+Copy the above connection string and paste it into the "New Connection" input field in MongoDB Compass.
+Alternatively, you can double-click the "connect_mongo_compass.bat" file in the project folder to open MongoDB Compass directly.

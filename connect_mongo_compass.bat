@@ -1,0 +1,3 @@
+@echo off
+echo Opening MongoDB Compass with the connection string for EDRR database...
+start mongodb://localhost:27017/edrr_db

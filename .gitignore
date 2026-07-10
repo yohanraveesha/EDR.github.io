@@ -1,0 +1,7 @@
+mongodb.zip
+mongodb_data/
+mongodb_extracted/
+node_modules/
+.env
+target/
+*.class
