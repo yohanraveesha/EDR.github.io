@@ -20,7 +20,8 @@ function Guard({ children, requiredEmail }) {
   if (requiredEmail && user.email !== requiredEmail) {
     if (user.role === 'GA_ADMIN') return <Navigate to="/admin-ga" replace />;
     if (user.role === 'RDA_ADMIN') return <Navigate to="/admin-rda" replace />;
-    if (user.role === 'RURAL_OFFICER' || user.role === 'IRRIGATION_OFFICER') return <Navigate to="/officer" replace />;
+    if (user.role === 'IRRIGATION_OFFICER') return <Navigate to="/water" replace />;
+    if (user.role === 'RURAL_OFFICER') return <Navigate to="/officer" replace />;
     return <Navigate to="/" replace />;
   }
 

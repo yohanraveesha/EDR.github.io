@@ -29,7 +29,8 @@ export default function LoginPage() {
       } else {
         if (user.role === 'GA_ADMIN') navigate('/admin-ga');
         else if (user.role === 'RDA_ADMIN') navigate('/admin-rda');
-        else if (user.role === 'RURAL_OFFICER' || user.role === 'IRRIGATION_OFFICER') navigate('/officer');
+        else if (user.role === 'RURAL_OFFICER') navigate('/officer');
+        else if (user.role === 'IRRIGATION_OFFICER') navigate('/water');
         else navigate('/citizen');
       }
     } catch (err) {
